@@ -16,6 +16,7 @@ import android.view.View;
 import android.view.ViewGroup;
 import android.widget.EditText;
 import android.widget.RadioButton;
+import android.widget.RadioGroup;
 
 import com.example.dieta.utils.Calculator;
 import com.example.dieta.utils.Validator;
@@ -25,7 +26,7 @@ public class Inputs extends ActionBarActivity {
 	public final static String EXTRA_YEARS = "com.example.EXTRA_YEARS";
 	public final static String EXTRA_WEIGHT = "com.example.EXTRA_WEIGHT";
 	public final static String EXTRA_HEIGHT = "com.example.EXTRA_HEIGHT";
-	public final static String EXTRA_GAIN = "com.example.EXTRA_GAIN";
+	public final static String EXTRA_RADIO = "com.example.EXTRA_RADIO";
 	
 	@Override
 	protected void onCreate(Bundle savedInstanceState) {
@@ -76,11 +77,12 @@ public class Inputs extends ActionBarActivity {
 	}
 
 	public void next(View view) {
-		Intent intent = new Intent(this, Diet.class); 
+		Intent intent = new Intent(this, Diet2.class); 
 		String name = ((EditText) findViewById(R.id.name)).getText().toString();
 		String years = ((EditText) findViewById(R.id.years)).getText().toString();
 		String weight = ((EditText) findViewById(R.id.weight)).getText().toString();
 		String height = ((EditText) findViewById(R.id.height)).getText().toString();
+		RadioGroup rgroup = (RadioGroup) findViewById(R.id.radio);
 		RadioButton gain = (RadioButton) findViewById(R.id.gain);
 		RadioButton lose= (RadioButton) findViewById(R.id.lose);
 		
@@ -91,19 +93,15 @@ public class Inputs extends ActionBarActivity {
 			intent.putExtra(EXTRA_YEARS, years);
 			intent.putExtra(EXTRA_WEIGHT, weight);
 			intent.putExtra(EXTRA_HEIGHT, height);
-			if (gain.isChecked())
-				intent.putExtra(EXTRA_GAIN, gain.isChecked());
-			else
-				intent.putExtra(EXTRA_GAIN, false);
+			intent.putExtra(EXTRA_RADIO, rgroup.getCheckedRadioButtonId()); //Se pasa el ID del que está seleccionado
+			
 			SharedPreferences prefs = getSharedPreferences("MyPreferences", Context.MODE_PRIVATE);
 			SharedPreferences.Editor editor = prefs.edit();
 			editor.putString("name", name);
 			editor.putFloat("imc", (new Calculator(Integer.parseInt(weight), Integer.parseInt(height))).getImc());
-			editor.putBoolean("isFirst", false);
+			editor.putBoolean("skipFirst", true);
 			editor.commit();
-		
-			//Los valores numericos los ingreso como string para reutilizarlos con 
-			//facilidad. Podriamo tmb cargar que tipo de plan quiere						
+			
 			startActivity(intent);
 		} else {
 			AlertDialog.Builder dialogBuilder = new AlertDialog.Builder(this);

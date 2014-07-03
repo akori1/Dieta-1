@@ -18,7 +18,6 @@ import android.view.ViewGroup;
 import android.widget.TextView;
 
 
-
 public class Diet extends ActionBarActivity implements ActionBar.TabListener {
 
 	SectionsPagerAdapter mSectionsPagerAdapter;
@@ -128,9 +127,9 @@ public class Diet extends ActionBarActivity implements ActionBar.TabListener {
 		public CharSequence getPageTitle(int position) {
 			Locale l = Locale.getDefault();
 			if (position == 0)
-				return getString(R.string.title_section_db).toUpperCase(l);
+				return getString(R.string.title_section_diet_day);
 			else
-				return getString(R.string.title_section_intent).toUpperCase(l);
+				return getString(R.string.title_section_diet_week);
 		}
 	}
 
@@ -164,7 +163,7 @@ public class Diet extends ActionBarActivity implements ActionBar.TabListener {
 			View rootView = inflater.inflate(R.layout.fragment_diet,
 					container, false);
 			TextView textView = (TextView) rootView
-					.findViewById(R.id.sectionLabel);
+					.findViewById(R.id.calories);
 			textView.setText(Integer.toString(getArguments().getInt(
 					ARG_SECTION_NUMBER)));
 			return rootView;

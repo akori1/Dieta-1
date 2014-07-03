@@ -8,6 +8,14 @@
     android:paddingTop="@dimen/activity_vertical_margin"
     tools:context="com.example.dieta.Welcome$PlaceholderFragment" >
 
+    <TextView
+        android:id="@+id/textWelcome"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_centerHorizontal="true"
+        android:textSize="@dimen/big" 
+        android:text="@string/welcome" />
+    
     <Button
         android:id="@+id/next"
         android:layout_width="match_parent"
@@ -26,14 +34,5 @@
         android:layout_centerVertical="true"
         android:contentDescription="@string/imageDescriptionWelcome"
         android:src="@drawable/dietfull" />
-
-    <TextView
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
-        android:layout_above="@+id/imageWelcome"
-        android:layout_centerHorizontal="true"
-        android:layout_marginBottom="46dp"
-        android:text="@string/welcome"
-        android:textSize="@dimen/big" />
 
 </RelativeLayout>

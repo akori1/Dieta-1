@@ -14,15 +14,13 @@
         android:layout_height="wrap_content"
         android:layout_alignParentTop="true"
         android:layout_centerHorizontal="true"
-        android:layout_marginTop="28dp"
-        android:text="@string/title_input"
-        android:textSize="@dimen/medium" />
+        android:textSize="@dimen/medium"
+        android:text="@string/title_input" />
     
 	<EditText
         android:id="@+id/name"
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
-        android:layout_alignLeft="@+id/years"
         android:layout_below="@+id/titleInput"
         android:layout_marginTop="32dp"
         android:ems="10"
@@ -60,9 +58,7 @@
         android:id="@+id/radio"
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
-        android:layout_above="@+id/next"
-        android:layout_alignLeft="@+id/weight"
-        android:layout_marginBottom="14dp"
+        android:layout_below="@+id/weight"
         android:orientation="horizontal" >
 
         <RadioButton
@@ -81,11 +77,10 @@
 
     <Button
         android:id="@+id/next"
-        android:layout_width="match_parent"
+        android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        android:layout_alignLeft="@+id/radio"
-        android:layout_alignParentBottom="true"
-        android:layout_marginBottom="35dp"
+        android:layout_below="@+id/radio"
+        android:layout_centerHorizontal="true"
         android:onClick="next"
         android:text="@string/next" />
     

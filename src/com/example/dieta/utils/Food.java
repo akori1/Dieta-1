@@ -6,7 +6,7 @@ public class Food {
 	private int amount_main;
 	private int amount_accompaniment;
 	private String main_measure;
-	private String accompaniment_mesure;
+	private String accompaniment_measure;
 	private int calories;
 	private String clasification;
 
@@ -16,7 +16,7 @@ public class Food {
 		this.amount_main = amount_main;
 		this.amount_accompaniment = amount_accompaniment;
 		this.main_measure = main_measure;
-		this.accompaniment_mesure = accompaniment_measure;
+		this.accompaniment_measure = accompaniment_measure;
 		this.calories = calories;
 		this.clasification = clasification;
 	}
@@ -37,36 +37,36 @@ public class Food {
 		this.schedule = schedule;
 	}
 	
-	public int getAmount_main() {
+	public int getAmountMain() {
 		return amount_main;
 	}
 	
-	public void setAmount_main(int amount_main) {
+	public void setAmountMain(int amount_main) {
 		this.amount_main = amount_main;
 	}
 	
-	public int getAmount_accompaniment() {
+	public int getAmountAccompaniment() {
 		return amount_accompaniment;
 	}
 	
-	public void setAmount_accompaniment(int amount_accompaniment) {
+	public void setAmountAccompaniment(int amount_accompaniment) {
 		this.amount_accompaniment = amount_accompaniment;
 	}
 	
-	public String getMain_measure() {
+	public String getMainMeasure() {
 		return main_measure;
 	}
 	
-	public void setMain_measure(String main_measure) {
+	public void setMainMeasure(String main_measure) {
 		this.main_measure = main_measure;
 	}
 	
-	public String getAccompaniment_mesure() {
-		return accompaniment_mesure;
+	public String getAccompanimentMeasure() {
+		return accompaniment_measure;
 	}
 	
-	public void setAccompaniment_mesure(String accompaniment_mesure) {
-		this.accompaniment_mesure = accompaniment_mesure;
+	public void setAccompanimentMeasure(String accompaniment_mesure) {
+		this.accompaniment_measure = accompaniment_measure;
 	}
 	
 	public int getCalories() {

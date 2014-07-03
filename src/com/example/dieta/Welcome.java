@@ -1,8 +1,8 @@
 package com.example.dieta;
 
-
-
+import android.content.Context;
 import android.content.Intent;
+import android.content.SharedPreferences;
 import android.os.Bundle;
 import android.support.v4.app.Fragment;
 import android.support.v7.app.ActionBarActivity;
@@ -11,6 +11,7 @@ import android.view.Menu;
 import android.view.MenuItem;
 import android.view.View;
 import android.view.ViewGroup;
+
 
 public class Welcome extends ActionBarActivity {
 
@@ -63,7 +64,12 @@ public class Welcome extends ActionBarActivity {
 	}
 	
 	public void next(View view) {
-		Intent intent = new Intent(this, Inputs.class);
+		Intent intent;
+		SharedPreferences prefs = getSharedPreferences("MyPreferences", Context.MODE_PRIVATE);
+		if (prefs.getBoolean("skipFirst", false))
+			intent = new Intent(this, Diet2.class);
+		else 
+			intent = new Intent(this, Inputs.class);
 		startActivity(intent);
 	}
 

@@ -1089,6 +1089,7 @@ containing a value of this type.
         public static final int ic_launcher=0x7f020059;
     }
     public static final class id {
+        public static final int accompaniment_measure=0x7f05004e;
         public static final int action_bar=0x7f05001c;
         public static final int action_bar_activity_content=0x7f050015;
         public static final int action_bar_container=0x7f05001b;
@@ -1100,13 +1101,17 @@ containing a value of this type.
         public static final int action_menu_divider=0x7f050016;
         public static final int action_menu_presenter=0x7f050017;
         public static final int action_mode_close_button=0x7f050024;
-        public static final int action_settings=0x7f050048;
+        public static final int action_settings=0x7f050050;
         public static final int activity_chooser_view_content=0x7f050025;
         public static final int always=0x7f05000b;
+        public static final int amount_accompaniment=0x7f05004c;
+        public static final int amount_main=0x7f05004b;
         public static final int beginning=0x7f050011;
+        public static final int calories=0x7f05003e;
         public static final int checkbox=0x7f05002d;
+        public static final int clasification=0x7f05004f;
         public static final int collapseActionView=0x7f05000d;
-        public static final int container=0x7f050047;
+        public static final int container=0x7f050049;
         public static final int default_activity_button=0x7f050028;
         public static final int dialog=0x7f05000e;
         public static final int disableHome=0x7f050008;
@@ -1115,27 +1120,30 @@ containing a value of this type.
         public static final int end=0x7f050013;
         public static final int expand_activities_button=0x7f050026;
         public static final int expanded_menu=0x7f05002c;
+        public static final int foodList=0x7f05003d;
         public static final int gain=0x7f050045;
-        public static final int height=0x7f050041;
+        public static final int height=0x7f050042;
         public static final int home=0x7f050014;
         public static final int homeAsUp=0x7f050005;
         public static final int icon=0x7f05002a;
         public static final int ifRoom=0x7f05000a;
         public static final int image=0x7f050027;
-        public static final int imageWelcome=0x7f050046;
+        public static final int imageWelcome=0x7f050048;
         public static final int listMode=0x7f050001;
         public static final int list_item=0x7f050029;
         public static final int lose=0x7f050044;
+        public static final int main_measure=0x7f05004d;
         public static final int middle=0x7f050012;
-        public static final int name=0x7f05003f;
+        public static final int name=0x7f050040;
         public static final int never=0x7f050009;
-        public static final int next=0x7f050043;
+        public static final int next=0x7f050046;
         public static final int none=0x7f050010;
         public static final int normal=0x7f050000;
         public static final int pager=0x7f05003c;
         public static final int progress_circular=0x7f050018;
         public static final int progress_horizontal=0x7f050019;
         public static final int radio=0x7f05002f;
+        public static final int schedule=0x7f05004a;
         public static final int search_badge=0x7f050032;
         public static final int search_bar=0x7f050031;
         public static final int search_button=0x7f050033;
@@ -1146,7 +1154,6 @@ containing a value of this type.
         public static final int search_plate=0x7f050036;
         public static final int search_src_text=0x7f050037;
         public static final int search_voice_btn=0x7f05003b;
-        public static final int sectionLabel=0x7f05003d;
         public static final int shortcut=0x7f05002e;
         public static final int showCustom=0x7f050007;
         public static final int showHome=0x7f050004;
@@ -1154,14 +1161,15 @@ containing a value of this type.
         public static final int split_action_bar=0x7f05001e;
         public static final int submit_area=0x7f050039;
         public static final int tabMode=0x7f050002;
+        public static final int textWelcome=0x7f050047;
         public static final int title=0x7f05002b;
-        public static final int titleInput=0x7f05003e;
+        public static final int titleInput=0x7f05003f;
         public static final int top_action_bar=0x7f050020;
         public static final int up=0x7f050021;
         public static final int useLogo=0x7f050003;
-        public static final int weight=0x7f050042;
+        public static final int weight=0x7f050043;
         public static final int withText=0x7f05000c;
-        public static final int years=0x7f050040;
+        public static final int years=0x7f050041;
     }
     public static final class integer {
         /**  The maximum number of action buttons that should be permitted within
@@ -1214,17 +1222,21 @@ containing a value of this type.
         public static final int abc_search_view=0x7f030016;
         public static final int abc_simple_decor=0x7f030017;
         public static final int diet=0x7f030018;
-        public static final int fragment_diet=0x7f030019;
-        public static final int fragment_inputs=0x7f03001a;
-        public static final int fragment_welcome=0x7f03001b;
-        public static final int inputs=0x7f03001c;
-        public static final int support_simple_spinner_dropdown_item=0x7f03001d;
-        public static final int welcome=0x7f03001e;
+        public static final int diet2=0x7f030019;
+        public static final int fragment_diet=0x7f03001a;
+        public static final int fragment_inputs=0x7f03001b;
+        public static final int fragment_welcome=0x7f03001c;
+        public static final int inputs=0x7f03001d;
+        public static final int listitem_food=0x7f03001e;
+        public static final int support_simple_spinner_dropdown_item=0x7f03001f;
+        public static final int welcome=0x7f030020;
     }
     public static final class menu {
-        public static final int dieta=0x7f0c0000;
-        public static final int first=0x7f0c0001;
-        public static final int inputs=0x7f0c0002;
+        public static final int diet2=0x7f0c0000;
+        public static final int dieta=0x7f0c0001;
+        public static final int first=0x7f0c0002;
+        public static final int inputs=0x7f0c0003;
+        public static final int prueba_list=0x7f0c0004;
     }
     public static final class string {
         /**  Content description for the action bar "home" affordance. [CHAR LIMIT=NONE] 
@@ -1272,6 +1284,7 @@ containing a value of this type.
         public static final int continue_plan=0x7f0a0016;
         public static final int dialog_message=0x7f0a0021;
         public static final int gain_weight=0x7f0a001f;
+        public static final int hello_world=0x7f0a0024;
         public static final int hint_height=0x7f0a001d;
         public static final int hint_name=0x7f0a001a;
         public static final int hint_weight=0x7f0a001c;
@@ -1281,12 +1294,14 @@ containing a value of this type.
         public static final int new_plan=0x7f0a0017;
         public static final int next=0x7f0a0010;
         public static final int title_activity_diet=0x7f0a0012;
+        public static final int title_activity_diet2=0x7f0a0023;
         public static final int title_activity_inputs=0x7f0a0018;
         public static final int title_activity_welcome=0x7f0a0015;
         public static final int title_dialog=0x7f0a0020;
         public static final int title_input=0x7f0a0019;
-        public static final int title_section_db=0x7f0a0013;
-        public static final int title_section_intent=0x7f0a0014;
+        public static final int title_section_diet_day=0x7f0a0013;
+        public static final int title_section_diet_week=0x7f0a0014;
+        public static final int total_calories=0x7f0a0022;
         public static final int welcome=0x7f0a000f;
     }
     public static final class style {
